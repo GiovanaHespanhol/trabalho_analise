@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Aluno - SGE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">🎓</span>
+      <span class="logo-text">SGE <strong>Aluno</strong></span>
+    </div>
+    
+    <nav class="nav-links">
+      <a href="#" class="active">Início</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#inscricoes">Minhas Inscrições</a>
+      <a href="#certificados">Certificados</a>
+    </nav>
+
+    <div class="user-profile">
+      <div class="avatar">LS</div>
+      <div class="user-info">
+        <span class="user-name">Lucas Silva</span>
+        <span class="user-role">Matrícula: 20261002</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="container">
+
+    <!-- BANNER DE BOAS-VINDAS -->
+    <section class="welcome-banner">
+      <h2>Bem-vindo de volta, Lucas! 👋</h2>
+      <p>Confira os próximos eventos técnicos da sua escola e garanta a sua vaga.</p>
+    </section>
+
+    <!-- LISTA DE PRÓXIMOS EVENTOS -->
+    <section id="eventos" class="section">
+      <div class="section-header">
+        <h3>Próximos Eventos</h3>
+        <span class="badge">Inscrições Abertas</span>
+      </div>
+
+      <div class="cards-grid">
+        
+        <!-- CARD 1 -->
+        <article class="card">
+          <div class="card-tag">Oficina</div>
+          <h4>Oficina de Robótica com Arduino</h4>
+          <p class="card-desc">Aprenda os conceitos básicos de eletrônica e programação para criar seu primeiro robô autônomo.</p>
+          
+          <div class="card-details">
+            <div class="detail-item">📅 22 de Outubro - 14:00</div>
+            <div class="detail-item">📍 Laboratório de Informática 03</div>
+            <div class="detail-item">👨‍🏫 Prof. Ricardo Lau</div>
+          </div>
+
+          <div class="card-footer">
+            <span class="vagas status-low">Apenas 2 vagas!</span>
+            <button class="btn btn-primary">Inscrever-se</button>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card">
+          <div class="card-tag">Palestra</div>
+          <h4>Inteligência Artificial no Mercado de Trabalho</h4>
+          <p class="card-desc">Uma visão geral sobre como o Machine Learning e as LLMs estão transformando o setor de tecnologia.</p>
+          
+          <div class="card-details">
+            <div class="detail-item">📅 28 de Outubro - 19:00</div>
+            <div class="detail-item">📍 Auditório Principal</div>
+            <div class="detail-item">👩‍🏫 Dra. Beatriz Costa</div>
+          </div>
+
+          <div class="card-footer">
+            <span class="vagas">30 vagas disponíveis</span>
+            <button class="btn btn-primary">Inscrever-se</button>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card">
+          <div class="card-tag">Workshop</div>
+          <h4>Workshop de UI/UX Design com Figma</h4>
+          <p class="card-desc">Crie interfaces de usuário atraentes e funcionais do zero usando as melhores práticas de design.</p>
+          
+          <div class="card-details">
+            <div class="detail-item">📅 05 de Novembro - 10:00</div>
+            <div class="detail-item">📍 Sala 12 - Bloco B</div>
+            <div class="detail-item">👨‍🏫 Prof. Gabriel Santos</div>
+          </div>
+
+          <div class="card-footer">
+            <span class="vagas status-full">Esgotado (Fila de espera)</span>
+            <button class="btn btn-warning">Entrar na Fila</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MINHAS INSCRIÇÕES & CERTIFICADOS -->
+    <section id="inscricoes" class="section">
+      <div class="section-header">
+        <h3>Minhas Inscrições e Certificados</h3>
+      </div>
+
+      <div class="my-activities">
+        
+        <div class="activity-item">
+          <div class="activity-info">
+            <span class="activity-title">Palestra sobre Inteligência Artificial</span>
+            <span class="activity-date">Data: 28/10/2026</span>
+          </div>
+          <span class="status-badge status-confirmed">Inscrição Confirmada</span>
+        </div>
+
+        <div class="activity-item">
+          <div class="activity-info">
+            <span class="activity-title">Introdução ao Desenvolvimento Web Node.js</span>
+            <span class="activity-date">Concluído em: 10/10/2026</span>
+          </div>
+          <button class="btn btn-outline">Emitir Certificado</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <p>&copy; 2026 SGE - Sistema de Gestão de Eventos |

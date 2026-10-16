@@ -1,0 +1,334 @@
+/* RESET BÁSICO E CONFIGURAÇÕES GERAIS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fcf8f8;
+  color: #222222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 18px; /* Fonte base aumentada */
+}
+
+.container {
+  max-width: 1300px; /* Largura maior da tela */
+  margin: 0 auto;
+  padding: 30px;
+  flex: 1;
+}
+
+/* CABEÇALHO (NAVBAR) */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 3px solid #dc2626;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.6rem;
+}
+
+.logo-icon {
+  font-size: 2rem;
+}
+
+.logo-text strong {
+  color: #dc2626;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555555;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #dc2626;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.user-role {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* BANNER DE BOAS-VINDAS */
+.welcome-banner {
+  background: linear-gradient(135deg, #991b1b, #ef4444);
+  color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(220, 38, 38, 0.25);
+}
+
+.welcome-banner h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.welcome-banner p {
+  color: #fef2f2;
+  font-size: 1.25rem;
+}
+
+/* SEÇÃO DE EVENTOS */
+.section {
+  margin-bottom: 50px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.section-header h3 {
+  font-size: 1.7rem;
+  color: #111111;
+}
+
+.badge {
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-size: 0.95rem;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 20px;
+}
+
+/* GRID DE CARDS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 30px;
+  border: 1px solid #fecaca;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(220, 38, 38, 0.15);
+}
+
+.card-tag {
+  align-self: flex-start;
+  background-color: #fee2e2;
+  color: #991b1b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.card h4 {
+  font-size: 1.4rem;
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+.card-desc {
+  font-size: 1.05rem;
+  color: #555555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.card-details {
+  background-color: #fff5f5;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #444444;
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  margin-bottom: 8px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #fee2e2;
+}
+
+.vagas {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.vagas.status-low {
+  color: #ea580c;
+}
+
+.vagas.status-full {
+  color: #dc2626;
+}
+
+/* BOTÕES MAIORES */
+.btn {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #b91c1c;
+}
+
+.btn-warning {
+  background-color: #d97706;
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background-color: #b45309;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #dc2626;
+  color: #dc2626;
+}
+
+.btn-outline:hover {
+  background-color: #fee2e2;
+}
+
+/* MINHAS INSCRIÇÕES */
+.my-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-item {
+  background-color: #ffffff;
+  border: 1px solid #fecaca;
+  padding: 22px 28px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-title {
+  font-weight: 700;
+  color: #111111;
+  font-size: 1.2rem;
+}
+
+.activity-date {
+  font-size: 0.95rem;
+  color: #666666;
+  margin-top: 4px;
+}
+
+.status-badge {
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 6px;
+}
+
+.status-confirmed {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+/* RODAPÉ */
+.footer {
+  background-color: #ffffff;
+  border-top: 2px solid #fecaca;
+  text-align: center;
+  padding: 25px;
+  font-size: 1rem;
+  color: #666666;
+}
